@@ -1,5 +1,6 @@
 body {
     font-family: 'Quicksand', Helvetica, sans-serif;
+    color: white;
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -11,21 +12,29 @@ body {
     background-color: #e69c3d;
 }
 
-#bmb-title {
-    color: #0065d1;
-    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-    font-size: 7vh;
-    text-align: center;
-    margin-bottom: 1vh;
-}
+    #bmb-title {
+        color: #0065d1;
+        font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+        font-size: 7vh;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
 
-#bmb-phrase {
-    color: #823a19;
-    font-family: 'Caveat', Arial, Helvetica, sans-serif;
-    font-size: 4vh;
-    text-align: center;
-    margin-bottom: 0;
-}
+    #bmb-phrase {
+        color: #823a19;
+        font-family: 'Caveat', Arial, Helvetica, sans-serif;
+        font-size: 4vh;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .row-full {
+        width: 100vw;
+        height: 100%;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+      }
 
 /* Nav Bar*/
 
@@ -54,13 +63,110 @@ body {
         color: #f8f8f8;
     }
 
-.row-full{
-    width: 100vw;
-    height: 100%;
+/* Touring page header */
+
+.tour-title {
+    text-align: center;
+    margin: 0;
+}
+
+    .stats-bar {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+/* Slideshow */
+.slideshow-container {
+    margin: auto;
     position: relative;
-    margin-left: -50vw;
-    left: 50%;
-  }
+    object-fit: contain;
+    overflow: hidden;
+    width: auto;
+    max-width: 1200px;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+}
+
+    .slideshow-container img {
+        height: 550px;
+    }
+
+    .caption {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+
+    .slide-number {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white !important;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .dot-container {
+        text-align:center; 
+        padding-top: 8px; 
+        background-color: rgb(29, 29, 29);
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .my-fade {
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+      
+    @keyframes fade {
+        from {opacity: 0.4;} 
+        to {opacity: 1;}
+    }
+      
+    @media only screen and (max-width: 300px) {
+        .prev, .next, .caption {font-size: 11px}
+    }
+
 
 .text-center {
     text-align: center;
@@ -76,12 +182,6 @@ body {
 
 .border-black {
     border-color: black;
-}
-
-.stats-bar {
-    color: white;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .no-padding {
@@ -108,31 +208,6 @@ body {
     width: 100%;
     height: 100%;
  }
-
-.carousel-control-prev, .carousel-control-next {
-    width: 50%;
-    margin-top: -80px;
-}
-
-.carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    bottom: -520px;
-}
-
-.carousel .carousel-item {
-    height: 600px;
-    object-fit: contain;
-  }
-  
-.carousel-item img {
-    position: absolute;
-    object-fit:contain;
-    top: 0;
-    left: 0;
-    max-height: 500px;
-}
 
 .bg-grey {
     background-color: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
