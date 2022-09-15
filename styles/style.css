@@ -77,18 +77,23 @@ body {
 
 /* Slideshow */
 .slideshow-container {
-    margin: auto;
     position: relative;
+    margin: auto;
     object-fit: contain;
     overflow: hidden;
-    width: auto;
-    max-width: 1200px;
     background-color: rgb(29, 29, 29);
     text-align: center;
 }
 
+    .mySlides {
+        display: none
+    }
+
     .slideshow-container img {
-        height: 550px;
+        max-width: 90vw;    
+        max-height: 90vh;
+        width: auto;
+        height: auto;
     }
 
     .caption {
