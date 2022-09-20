@@ -63,6 +63,107 @@ body {
         color: #f8f8f8;
     }
 
+/*** Card Hover Effect ***/
+
+@media (hover: hover) {
+    /*setting the properties of
+    content within the image*/
+    .content {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    /* rgb(0,0,0) indicates black and
+        the fourth parameter is the opacity */
+    .content .content-overlay {
+        /*setting 0.8 to 1 will turn the overlay opaque*/
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: auto;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        /*transition time and effect*/
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        /*transition time and effect*/
+        -moz-transition: all 0.4s ease-in-out 0s;
+        /*transition time and effect*/
+        transition: all 0.4s ease-in-out 0s;
+    }
+    /* setting hover properties */
+    .content:hover .content-overlay {
+        opacity: 1;
+    }
+    .content-image {
+        width: 100%;
+    }
+    .content-details {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*transition time and effect*/
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        /*transition time and effect*/
+        -moz-transition: all 0.3s ease-in-out 0s;
+        /*transition time and effect*/
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .content:hover .content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+    /*setting the properties of
+    content within the image*/
+    .content {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    /* rgb(0,0,0) indicates black and
+        the fourth parameter is the opacity */
+    .content .content-overlay {
+        /*setting 0.8 to 1 will turn the overlay opaque*/
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: auto;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+    .content-image {
+        width: 100%;
+    }
+    .content-details {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
 /* Touring page header */
 
 .tour-title {
@@ -335,63 +436,4 @@ body {
 }
 .tile-padding {
     padding: 0px !important;
-}
-
-/*** Card Hover Black Out ***/
-/*setting the properties of
-content within the image*/
-.content {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-/* rgb(0,0,0) indicates black and
-    the fourth parameter is the opacity */
-.content .content-overlay {
-    /*setting 0.8 to 1 will turn the overlay opaque*/
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: auto;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    /*transition time and effect*/
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    /*transition time and effect*/
-    -moz-transition: all 0.4s ease-in-out 0s;
-    /*transition time and effect*/
-    transition: all 0.4s ease-in-out 0s;
-}
-/* setting hover properties */
-.content:hover .content-overlay {
-    opacity: 1;
-}
-.content-image {
-    width: 100%;
-}
-.content-details {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    /*transition time and effect*/
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    /*transition time and effect*/
-    -moz-transition: all 0.3s ease-in-out 0s;
-    /*transition time and effect*/
-    transition: all 0.3s ease-in-out 0s;
-}
-.content:hover .content-details {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
 }
