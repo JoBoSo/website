@@ -139,9 +139,8 @@ const tiles = [
     },
 ]
 
-let allTiles = ""
-for (let tile of tiles) {
-    allTiles += `
+function makeTile(tile) {
+    return `
         <div class="col-12 col-md-4">
             <div class="card border-0">
                 <a href=${tile.page}>
@@ -162,4 +161,6 @@ for (let tile of tiles) {
         </div>
     `;
 }
+
+const allTiles = tiles.map(makeTile).join("")
 hike_tiles.innerHTML = '<div id="card-row" class="row no-gutters">' + allTiles + "</div>"
