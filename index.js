@@ -93,7 +93,7 @@ for (let tile of tiles) {
                 <a href=${tile.page}>
                     <div class="content">
                         <div class="content-overlay"></div>
-                        <img class="content-image img-fluid rounded-0" src=${tile.image} height="300px">
+                        <img class="content-image img-fluid" src=${tile.image} height="300px">
                         <div class="content-details">
                             <h3 class="content-title text-white">
                                 ${tile.title}
