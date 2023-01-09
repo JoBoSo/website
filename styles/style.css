@@ -73,6 +73,7 @@ body {
         width: 100%;
         margin: auto;
         overflow: hidden;
+        border-radius: 7px;
     }
     /* rgb(0,0,0) indicates black and
         the fourth parameter is the opacity */
@@ -164,6 +165,10 @@ body {
     }
 }
 
+.card-corners {
+    border-radius: 7px;
+}
+
 /* Touring page header */
 
 .tour-title {
@@ -191,8 +196,8 @@ body {
     }
 
     .slideshow-container img {
-        max-width: 90vw;    
-        max-height: 90vh;
+        max-width: 80vw;    
+        max-height: 80vh;
         width: auto;
         height: auto;
     }
@@ -400,11 +405,28 @@ body {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 7%;
+}
+
+.myMap {
+    width:100%; 
+    height:100%; 
+    overflow:hidden; 
+    border-top: 2px solid black
+}
+.myMap iframe {
+    margin-top:-69px; 
+    border:2px solid black;
 }
 
 .bg-innertemple {
     background-image: url('../images/light-within-amalfi.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.bg-innerlight {
+    background-image: url('../images/inner-light-tuco-amalfi.jpg');
     background-repeat:no-repeat;
     background-size:cover;
 }

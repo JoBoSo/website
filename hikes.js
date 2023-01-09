@@ -139,28 +139,31 @@ const tiles = [
     },
 ]
 
-function makeTile(tile) {
+function makeTiles(tiles) {
     return `
-        <div class="col-12 col-md-4">
-            <div class="card border-0">
-                <a href=${tile.page}>
-                    <div class="content">
-                        <div class="content-overlay"></div>
-                        <img class="content-image img-fluid" src=${tile.image} height="300px">
-                        <div class="content-details">
-                            <h3 class="content-title text-white">
-                                ${tile.title}
-                            </h3>
-                            <p class="content-text text-white">
-                                ${tile.subtitle}
-                            </p>
-                        </div>
+        <div id="card-row" class="row no-gutters">
+            ${tiles.map((tile) => `
+                <div class="col-12 col-md-4">
+                    <div class="card border-0 card-corners">
+                        <a href=${tile.page}>
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image img-fluid" src=${tile.image} height="300px">
+                                <div class="content-details">
+                                    <h3 class="content-title text-white">
+                                        ${tile.title}
+                                    </h3>
+                                    <p class="content-text text-white">
+                                        ${tile.subtitle}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
+                </div>
+            `).join("")}
         </div>
     `;
 }
 
-const allTiles = tiles.map(makeTile).join("")
-hike_tiles.innerHTML = '<div id="card-row" class="row no-gutters">' + allTiles + "</div>"
+hike_tiles.innerHTML = makeTiles(tiles);
