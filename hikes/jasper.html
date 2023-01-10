@@ -25,6 +25,11 @@
         gtag('config', 'G-Z1TXV2J73Y');
     </script>
 
+    <!-- Components -->
+    <script defer src="../components/header.js"></script>
+    <script defer src="../components/navbar2.js"></script>
+    <script defer src="../components/footer2.js"></script>
+
     <title>Jasper</title>
 </head>
 <body>
@@ -33,17 +38,8 @@
     <div class="container">
         <div class="row row-full no-gutters">
             <div class="col-12">
-                <div id="bmb-header">
-                    <h1 id="bmb-title">Big Money Bicycle Touring</h1>
-                    <p id="bmb-phrase">The joy of riding one's bicycle anywhere one wishes and camping along the way is priceless.</p>
-                </div>
-                <div class="my-nav">
-                    <a href="../index.html"><b>BIKE TOURS</b></a>
-                    <a href="../hikes.html"><b>HIKES</b></a>
-                    <a href="../blog.html"><b>BLOG</b></a>
-                    <a style="margin-left: auto;" href="../subscribe.html"><i><b>SUBSCRIBE</b></i></a>
-                    </a>
-                </div>
+                <div id="header"></div>
+                <div id="navbar2"></div>
             </div>
         </div>
 
@@ -274,44 +270,6 @@
                     <a class="next" onclick="plusSlides(1)">❯</a>
 
                 </div>
-
-                <div class="dot-container">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                    <span class="dot" onclick="currentSlide(10)"></span>
-                    <span class="dot" onclick="currentSlide(11)"></span> 
-                    <span class="dot" onclick="currentSlide(12)"></span> 
-                    <span class="dot" onclick="currentSlide(13)"></span> 
-                    <span class="dot" onclick="currentSlide(14)"></span>
-                    <span class="dot" onclick="currentSlide(15)"></span>
-                    <span class="dot" onclick="currentSlide(16)"></span>
-                    <span class="dot" onclick="currentSlide(17)"></span>
-                    <span class="dot" onclick="currentSlide(18)"></span>
-                    <span class="dot" onclick="currentSlide(19)"></span>
-                    <span class="dot" onclick="currentSlide(20)"></span>
-                    <span class="dot" onclick="currentSlide(21)"></span> 
-                    <span class="dot" onclick="currentSlide(22)"></span> 
-                    <span class="dot" onclick="currentSlide(23)"></span> 
-                    <span class="dot" onclick="currentSlide(24)"></span>
-                    <span class="dot" onclick="currentSlide(25)"></span>
-                    <span class="dot" onclick="currentSlide(26)"></span>
-                    <span class="dot" onclick="currentSlide(27)"></span>
-                    <span class="dot" onclick="currentSlide(28)"></span>
-                    <span class="dot" onclick="currentSlide(29)"></span>
-                    <span class="dot" onclick="currentSlide(30)"></span>
-                    <span class="dot" onclick="currentSlide(31)"></span> 
-                    <span class="dot" onclick="currentSlide(32)"></span> 
-                    <span class="dot" onclick="currentSlide(33)"></span> 
-                    <span class="dot" onclick="currentSlide(34)"></span>
-                    <span class="dot" onclick="currentSlide(35)"></span>
-                </div>
                 <br>
 
             </div>
@@ -337,17 +295,7 @@
             </div>
         </div>
 
-        <div class="row no-gutters">
-            <div class="col-12">
-                <div class="footer">
-                    <div class="content">
-                        <a href="https://www.instagram.com/big_money_biking/">
-                            <img src="../images/instagram-logo.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="footer2"></div>
     </div>
 
     <!-- Slideshow -->
