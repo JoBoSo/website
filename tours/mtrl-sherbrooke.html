@@ -26,9 +26,9 @@
     </script>
 
     <!-- Components -->
-    <script defer src="../components/header.js"></script>
-    <script defer src="../components/navbar2.js"></script>
-    <script defer src="../components/footer2.js"></script>
+    <script defer src="../components/Header.js"></script>
+    <script defer src="../components/Navbar.js"></script>
+    <script defer src="../components/Footer.js"></script>
 
     <title>Montreal to Sherbrooke</title>
 </head>
@@ -36,8 +36,8 @@
     <div class="container">
         <div class="row row-full no-gutters">
             <div class="col-12">
-                <div id="header"></div>
-                <div id="navbar2"></div>
+                <my-header></my-header>
+                <my-navbar root='../'></my-navbar>
             </div>
         </div>
 
@@ -333,7 +333,32 @@
             </div>
         </div>
 
-        <div id="footer2"></div>
+        <div class="container">        
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <!-- Timeline -->
+                    <ul class="timeline">
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="h5 mb-0">Day 1: Montreal to Stukely-Sud</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 16, 2022</span>
+                            <p class="text-small mt-2 font-weight-light"></p>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="h5 mb-0">Day 2: To Sherbrooke and back to Mt. Orford</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 17, 2022</span>
+                            <p class="text-small mt-2 font-weight-light"></p>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="h5 mb-0">Day 3: Return to Montreal</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 18, 2022</span>
+                            <p class="text-small mt-2 font-weight-light"></p>
+                        </li>
+                    </ul><!-- End -->
+                </div>
+            </div>
+        </div>
+
+        <my-footer root='../'></my-footer>
     </div>
 
     <!-- Slideshow -->

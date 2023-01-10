@@ -26,10 +26,10 @@
     </script>
 
     <!-- Components -->
-    <script defer src="../components/header.js"></script>
-    <script defer src="../components/navbar2.js"></script>
+    <script defer src="../components/Header.js"></script>
+    <script defer src="../components/Navbar.js"></script>
     <script defer src="mccrae-peak.js"></script>
-    <script defer src="../components/footer2.js"></script>
+    <script defer src="../components/Footer.js"></script>
 
     <title>McCrae Peak</title>
 </head>
@@ -37,8 +37,8 @@
     <div class="container">
         <div class="row row-full no-gutters">
             <div class="col-12">
-                <div id="header"></div>
-                <div id="navbar2"></div>
+                <my-header></my-header>
+                <my-navbar root='../'></my-navbar>
             </div>
         </div>
 
@@ -333,7 +333,7 @@
             </div>
         </div>
 
-        <div id="footer2"></div>
+        <my-footer root='../'></my-footer>
     </div>
 
     <!-- Slideshow -->
