@@ -11,9 +11,7 @@ body {
 /* BMB Header */
 
 #bmb-header {
-    background: #ffc272; /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #a85e28, #a85e28); /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #a85e28, #a85e28); */ */
+    background: #ffc272;
 }
 
 #bmb-title {
@@ -45,7 +43,7 @@ body {
 .my-nav {
     display: flex;
     overflow: hidden;
-    height: 24pt;
+    height: 6vh;
     background-color: #00abea /*#016ad5*/;
     align-items: center;
     padding: 0;
@@ -54,10 +52,10 @@ body {
 
     .my-nav a {
         color: #f8f8f8;
-        font-size: 12pt;
+        font-size: 2.8vh;
         text-align: center;
         vertical-align: middle;
-        padding: 10pt;
+        padding: 3vh;
         margin: 0;
         text-decoration: none;
     }
@@ -138,7 +136,6 @@ body {
         width: 100%;
         margin: auto;
         overflow: hidden;
-        border-radius: 7px;
     }
     /* rgb(0,0,0) indicates black and
         the fourth parameter is the opacity */
@@ -181,14 +178,10 @@ body {
     margin: 0;
 }
 
-.stats-bar {
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 0px !important;
-    padding-bottom: 10px !important;
-    margin: 0 !important;
-    /* border-bottom: solid #dedcdc 1px; */
-}
+    .stats-bar {
+        text-align: center;
+        vertical-align: middle;
+    }
 
 /* Slideshow */
 .slideshow-container {
@@ -198,9 +191,6 @@ body {
     overflow: hidden;
     background-color: rgb(29, 29, 29);
     text-align: center;
-    border-radius: 10px;
-    height: 100vw;
-    max-height: 540px;
 }
 
     .mySlides {
@@ -208,10 +198,10 @@ body {
     }
 
     .slideshow-container img {
-        /* max-width: 100vw;     */
-        max-height: 540px;
+        max-width: 80vw;    
+        max-height: 80vh;
         width: auto;
-        height: 100vw;
+        height: auto;
     }
 
     .caption {
@@ -392,48 +382,22 @@ body {
     text-align: center;
 }
 
-.photoBar {
-    padding: 3px; 
-    background-color: #dedcdc;
-    border-radius: 5px;
-}
-
-.photoBar img {
-    width: 100%; 
-    height: auto;
-    padding: 3px;
-    border-radius: 10px;
-}
-
-.report {
-    color: white;
-}
-
-.footer {
-    /* border-top: rgb(64, 64, 64) solid 1px; */
-    /* padding-top: 5px; */
-    padding-bottom: 5px;
-}
-
 .footer img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 7%;
-    min-width: 90px;
 }
 
 .myMap {
     width:100%; 
     height:100%; 
     overflow:hidden; 
-    border-top: 2px solid black;
-    border-radius: 10px;
+    border-top: 2px solid black
 }
 .myMap iframe {
     margin-top:-69px; 
     border:2px solid black;
-    border-radius: 10px;
 }
 
 .bg-innertemple {
