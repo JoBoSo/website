@@ -26,7 +26,7 @@ const tiles = [
     {
         title: "Babine Lake",
         subtitle: "BC's Longest Lake",
-        image: "images/babine-lake/IMG_9538.jpg",
+        image: "images/babine-lake/IMG_9504.jpg",
         page: "tours/babine-lake.html"
     },
     {
@@ -61,7 +61,7 @@ const tiles = [
     },
     {
         title: "Brewster & Campbell Lakes",
-        subtitle: "Two Fine Lakes",
+        subtitle: "Peace on the water",
         image: "images/brewster-lake/IMG_5594.JPG",
         page: "tours/brewster-lake.html"
     },
