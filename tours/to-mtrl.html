@@ -26,9 +26,9 @@
     </script>
 
     <!-- Components -->
-    <script defer src="../components/Header.js"></script>
-    <script defer src="../components/Navbar.js"></script>
-    <script defer src="../components/Footer.js"></script>
+    <script defer src="../components/header.js"></script>
+    <script defer src="../components/navbar2.js"></script>
+    <script defer src="../components/footer2.js"></script>
     <script defer src="to-mtrl.js"></script>
 
     <title>Schomberg to Montreal</title>
@@ -39,8 +39,8 @@
     <div class="container">
         <div class="row row-full no-gutters">
             <div class="col-12">
-                <my-header></my-header>
-                <my-navbar root='../'></my-navbar>
+                <div id="header"></div>
+                <div id="navbar2"></div>
             </div>
         </div>
 
@@ -56,6 +56,9 @@
             </div>
         </div>
 
+        <div id="myCarousel"></div>
+        <br>
+
         <div class="row no-gutters">
             <div class="myMap">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XuTBbBZ4atnQiUkwiHpvshf5EYXXuUQ&ehbc=2E312F" width="100%" height="480"></iframe>
@@ -63,11 +66,8 @@
         </div>
         <br>
 
-        <div id="myCarousel"></div>
-        <br>
-
         <div class="row no-gutters">
-            <div class="col-12 text-white">
+            <div class="col-12 report">
                 <h3 class="text-center margin-top-3">Trip Report</h3>
                 <p class="text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
                     <i>My first bike tour.</i> I started in Schomberg, Ontario 
@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <my-footer root='../'></my-footer>
+        <div id="footer2"></div>
     </div>
 
     <!-- Slideshow -->

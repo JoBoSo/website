@@ -26,9 +26,9 @@
     </script>
 
     <!-- Components -->
-    <script defer src="../components/Header.js"></script>
-    <script defer src="../components/Navbar.js"></script>
-    <script defer src="../components/Footer.js"></script>
+    <script defer src="../components/header.js"></script>
+    <script defer src="../components/navbar2.js"></script>
+    <script defer src="../components/footer2.js"></script>
 
     <title>Montreal to Sherbrooke</title>
 </head>
@@ -36,8 +36,8 @@
     <div class="container">
         <div class="row row-full no-gutters">
             <div class="col-12">
-                <my-header></my-header>
-                <my-navbar root='../'></my-navbar>
+                <div id="header"></div>
+                <div id="navbar2"></div>
             </div>
         </div>
 
@@ -52,6 +52,18 @@
                 </p>
             </div>
         </div>
+
+        <div class="photoBar">
+            <div class="row no-gutters">
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2713.jpg"></div>
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2709.jpg"></div>
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2789.jpg"></div>
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2805.jpg"></div>
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2755.jpg"></div>
+                <div class="col-4 col-sm-4 col-md-2"><img src="../images/mtrl-sherbrooke/IMG_2775.jpg"></div>
+            </div>
+        </div>
+        <br>
 
         <div class="row no-gutters">
             <div class="myMap">
@@ -307,46 +319,21 @@
         </div>
 
         <div class="row no-gutters">
-            <div class="col-12 text-white">
+            <div class="col-12 report">
                 <h3 class="text-center margin-top-3">Trip Report</h3>
-                <p class=" text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
+                <p class="text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
                     I rode from Montreal to Sherbrooke and back on the Route Verte over the course of three days and 399kms. Much of the route was along paved and gravel bike paths that cut through towns, forests, and farms. On my first day, I rode the forest trail through Yamaska National Park, which was where the hills began, and camped next to a power grid.
                 </p>
-                <p class=" text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
+                <p class="text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
                     On my second day, I biked through Mont Orford National Park--my favorite part of the trip--and arrived in Sherbrooke around 2pm. I at some shawarma, then I turned back around. I ate more shawarma for dinner in Magog and rode along the lake at sunset. Magog was my favorite town on the tour. I pushed on in the dark to the cyclist campground in Mont Orford National Park for the night.
                 </p>
-                <p class=" text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
+                <p class="text-justify">&ensp;&ensp;&ensp;&ensp;&ensp;
                     My final day was a grind through the rain to get back home. Had the weather been good, my intention was to take another two days to go south from Sherbrooke to Stanstead on the Vermont border. A nice route might be to start in Yamaska, then go through Orford, then do a loop around Lake Memphremagog on the way back to Yamaska.
                 </p>
             </div>
         </div>
 
-        <div class="container">        
-            <div class="row">
-                <div class="col-lg-7 mx-auto">
-                    <!-- Timeline -->
-                    <ul class="timeline">
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
-                            <div class="timeline-arrow"></div>
-                            <h2 class="h5 mb-0">Day 1: Montreal to Stukely-Sud</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 16, 2022</span>
-                            <p class="text-small mt-2 font-weight-light"></p>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
-                            <div class="timeline-arrow"></div>
-                            <h2 class="h5 mb-0">Day 2: To Sherbrooke and back to Mt. Orford</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 17, 2022</span>
-                            <p class="text-small mt-2 font-weight-light"></p>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow text-gray">
-                            <div class="timeline-arrow"></div>
-                            <h2 class="h5 mb-0">Day 3: Return to Montreal</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>September 18, 2022</span>
-                            <p class="text-small mt-2 font-weight-light"></p>
-                        </li>
-                    </ul><!-- End -->
-                </div>
-            </div>
-        </div>
-
-        <my-footer root='../'></my-footer>
+        <div id="footer2"></div>
     </div>
 
     <!-- Slideshow -->
